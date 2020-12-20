@@ -1,22 +1,29 @@
-<title>Programa</title>
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa</title>
+</head>
+<body>
+    <script>
+        function pulaLinha() {
+            document.write("<br><br>");
+        }
 
-<script>
-    function pulaLinha() {
-        document.write("<br><br>");
-    }
+        function mostra(text) {
+            document.write(text);
+            pulaLinha();
+        }
 
-    function mostra(text) {
-        document.write(text);
-        pulaLinha();
-    }
+        var ano = 2016;
 
-    var ano = 2016;
+        mostra();
 
-    mostra();
-
-    mostra("Flávio nasceu em " + (ano - 1977) + " anos");
-    mostra("Joaquim nascem em " + (ano - 1996) + " anos");
-    ano = 2017 // reatribuindo valor na variável
-    mostra("Barney nasceu em " + (ano - 1976) + " anos");
-</script>
+        mostra("Flávio nasceu em " + (ano - 1977) + " anos");
+        mostra("Joaquim nascem em " + (ano - 1996) + " anos");
+        ano = 2017 // reatribuindo valor na variável
+        mostra("Barney nasceu em " + (ano - 1976) + " anos");
+    </script>
+</body>
+</html>

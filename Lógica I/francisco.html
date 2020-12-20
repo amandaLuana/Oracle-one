@@ -1,25 +1,33 @@
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francisco</title>
+</head>
+<body>
+    <script>
 
-<script>
-
-    function pulaLinha() {
-        document.write("<br>");
-    }
-
-    function mostra(frase) {
-
-        document.write(frase);
-        pulaLinha();
-    }
-
-    var anoCopa = 1930;
-    var limite = parseInt(prompt("Qual é o ano limite?"));
-
-    while(anoCopa <= limite) {
-        mostra(anoCopa + " tem copa!");
-        anoCopa = anoCopa + 4;  
-    }
-
-
-    mostra("Ufa! Esses foram os anos de copa até " + limite);
-</script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+    
+        function mostra(frase) {
+    
+            document.write(frase);
+            pulaLinha();
+        }
+    
+        var anoCopa = 1930;
+        var limite = parseInt(prompt("Qual é o ano limite?"));
+    
+        while(anoCopa <= limite) {
+            mostra(anoCopa + " tem copa!");
+            anoCopa = anoCopa + 4;  
+        }
+    
+    
+        mostra("Ufa! Esses foram os anos de copa até " + limite);
+    </script>
+</body>
+</html>

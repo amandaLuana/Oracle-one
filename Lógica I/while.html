@@ -1,22 +1,30 @@
-<meta charset="UTF-8">
-
-<script>
-    function pulaLinha() {
-        document.write("<br>");
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+</head>
+<body>
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+    
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+    
+        /*for( var i = 0; i < 10; i++ ) {
+        alert( "O resultado é " + (2 * i) );
+    */
+        var i = 0;
+        while (i < 10) {
+            alert("O resultado é " + (2 * 1));
+            i++;
+        }
     }
-
-    function mostra(frase) {
-        document.write(frase);
-        pulaLinha();
-    }
-
-    /*for( var i = 0; i < 10; i++ ) {
-    alert( "O resultado é " + (2 * i) );
-*/
-    var i = 0;
-    while (i < 10) {
-        alert("O resultado é " + (2 * 1));
-        i++;
-    }
-}
-</script>
+    </script>
+</body>
+</html>

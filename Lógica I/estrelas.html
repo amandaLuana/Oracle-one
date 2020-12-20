@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabuada</title>
+    <title>estrelas</title>
 </head>
-<body>    
+<body>
     <script>
         function pulaLinha() {
             document.write("<br>");
         }
-
+    
         function mostra(frase) {
             document.write(frase);
             pulaLinha();
         }
-
-        var multiplicador = parseInt(prompt("Digite um multiplicador"));
-
-        for (var i = 1; i <= 10; i++) {
-            mostra(multiplicador * i);
+    
+        for (var linha = 1; linha <= 3; linha++) {
+            for (var coluna = 1; coluna <= 10; coluna++) {
+                document.write("*");
+            }
+            pulaLinha();
         }
-
-        mostra("Fim");
     </script>
 </body>
 </html>
