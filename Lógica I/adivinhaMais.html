@@ -7,6 +7,22 @@
 </head>
 <body>
     <input type="text">
-    <button>Compare com o meu segredo</button>
+    <button onclick="verifica()">Compare com o meu segredo</button>
+
+    <script>
+        var segredo = Math.round(Math.random() * 10);
+        var input = document.querySelector("input");
+        input.focus();
+        
+        function verifica() { // guarda o teste para ser chamado apenas quando o botão por clicado
+            if (input.value == segredo) {
+                alert("Você ACERTOU!");
+            } else {
+                alert("Você ERROU!");
+            }
+            input.value = "";
+            input.focus();
+        }   
+    </script>
 </body>
 </html>
